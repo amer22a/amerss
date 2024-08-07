@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مضار العاب السولز للكاتب عامر</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
+  h1 {
+    color: #333;
+    font-size: 1.5em;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    background-color: #ffd699;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  li:hover {
+    background-color: #ffad33;
+  }
+  .explanation {
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #333;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.2em;
+    }
+    li {
+      font-size: 0.9em;
+      padding: 8px;
+    }
+    .explanation {
+      font-size: 0.8em;
+      padding: 8px;
+    }
+  }
+</style>
+</head>
+<body>
+<h1>مضار العاب السولز</h1>
+<ul>
+  <li>مشاكل بالنوم
+    <div class="explanation sleepIssues">
+      العب السولز يمكن أن تسبب اضطرابات في نومك بسبب التوتر الزائد والتفكير الزائد قبل النوم.
+    </div>
+  </li>
+  <li>ارتفاع الوزن
+    <div class="explanation weightGain">
+      العب السولز قد يؤدي إلى زيادة الوزن بسبب الحركة المحدودة وقضاء وقت طويل جالسًا.
+    </div>
+  </li>
+  <li>ارتفاع نسبة الدهون
+    <div class="explanation fatIncrease">
+      الإدمان على العب السولز يمكن أن يؤدي إلى زيادة نسبة الدهون في جسمك بسبب نقص النشاط البدني.
+    </div>
+  </li>
+  <li>الحول
+    <div class="explanation strabismus">
+      العب السولز بشكل مفرط يمكن أن يسبب الحول نتيجة لإجهاد العين.
+    </div>
+  </li>
+  <li>الارق
+    <div class="explanation insomnia">
+      العب السولز قبل النوم يمكن أن يسبب الأرق بسبب الإثارة والتوتر.
+    </div>
+  </li>
+  <li>الإدمان
+    <div class="explanation addiction">
+      يمكن أن تؤدي العاب السولز إلى إدمان بسبب الرغبة المستمرة في الاستمرار واللعب.
+    </div>
+  </li>
+  <li>الهلوسة
+    <div class="explanation hallucination">
+      قد تسبب العاب السولز الهلوسة نتيجة للتفاعل المفرط مع العالم الافتراضي.
+    </div>
+  </li>
+  <li>الغثيان
+    <div class="explanation nausea">
+      البعض يشعر بالغثيان بسبب الحركة السريعة والمستمرة في العاب السولز.
+    </div>
+  </li>
+  <li>قصر القامة
+    <div class="explanation shortStature">
+      الجلوس الطويل أمام الشاشات قد يؤثر على نمو الأطفال ويسبب قصر القامة.
+    </div>
+  </li>
+  <li>انحناء الظهر
+    <div class="explanation backBent">
+      الجلوس غير الصحيح أثناء اللعب قد يؤدي إلى انحناء الظهر على المدى البعيد.
+    </div>
+  </li>
+  <li>ضمور عضلي
+    <div class="explanation muscleAtrophy">
+      نقص الحركة والنشاط البدني بسبب العاب السولز يمكن أن يؤدي إلى ضمور عضلي.
+    </div>
+  </li>
+  <li>الاكتئاب
+    <div class="explanation depression">
+      العزلة الاجتماعية بسبب الإدمان على العاب السولز يمكن أن تؤدي إلى الاكتئاب.
+    </div>
+  </li>
+  <li>الفقر
+    <div class="explanation poverty">
+      الإنفاق المفرط على العاب السولز يمكن أن يؤدي إلى مشاكل مالية وفقر.
+    </div>
+  </li>
+  <li>اختلال هرمون الدوبامين
+    <div class="explanation dopamineImbalance">
+      الأفراط في اللعب قد يؤثر على توازن هرمون الدوبامين مما يؤثر على المزاج.
+    </div>
+  </li>
+  <li>مشاكل في المفاصل
+    <div class="explanation joints">
+      الجلوس الطويل قد يؤدي إلى مشاكل وآلام في المفاصل.
+    </div>
+  </li>
+  <li>ضعف النظر
+    <div class="explanation weakSight">
+      النظر المستمر إلى الشاشات يمكن أن يسبب ضعف النظر وإجهاد العين.
+    </div>
+  </li>
+</ul>
+
+<script>
+  const explanations = document.querySelectorAll('.explanation');
+  const listItems = document.querySelectorAll('li');
+
+  listItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      explanations.forEach(explanation => explanation.style.display = 'none');
+      explanations[index].style.display = 'block';
+    });
+  });
+</script>
+</body>
+</html>
